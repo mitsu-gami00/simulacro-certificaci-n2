@@ -259,6 +259,8 @@ input {
     flex: 1;
     flex-direction: column;
     min-width: 350px;
+    text-align: start;
+    padding: 1%;
 }
 
 .orden {
@@ -268,6 +270,8 @@ input {
     align-items: center;
     flex: 1;
     padding: 10px;
+    margin-bottom: 1px;
+    border: gray 1px solid;
 }
 
 .orden div img{
@@ -303,6 +307,9 @@ input {
     width: 100%;
 }
 
+.orden-t div p {
+    font-size: 0.9rem;
+}
 
 .orden div img {
     width: 100%;
@@ -312,8 +319,12 @@ button {
     background-color: #17324F;
     border-radius: 50%;
     border: none;
-    padding: 0px 9px;
+    padding: 0px 8.5px;
     font-size: 1.8rem;
     color: white;
     cursor: pointer;
+}
+
+h3{
+    font-size: 1.1rem;
 }

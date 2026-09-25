@@ -14,6 +14,14 @@ articulo2.forEach(function (button) {
     });
 })
 
+let articulo3 = document.querySelectorAll("#art3");
+articulo3.forEach(function (button) {
+    button.addEventListener("click", function () {
+        let articulos = document.getElementById("articulosCarro");
+        articulos.innerText = parseInt(articulos.innerText) + 1;
+    });
+})
+
 let correo = document.getElementById("email");
 let login = document.querySelectorAll("#login");
 login.forEach(function (button) {
