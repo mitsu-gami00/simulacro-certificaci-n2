@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: red 1px solid
 }
 
 body{
@@ -65,6 +64,7 @@ nav {
     align-items: center;
     gap: 8%;
     width: 62%;
+    flex-wrap: wrap;
 }
 
 .input{
@@ -101,6 +101,7 @@ input {
     font-size: 1rem;
     text-align: left;
     padding-left: 5px;
+    min-width: 300px;
 }
 
 #login {
@@ -109,6 +110,7 @@ input {
     border: none;
     padding: 0% 3%;
     width: 25%;
+    min-width: 100px;
     cursor: pointer;
     font-size: 1rem;
     font-weight: bold;
@@ -121,10 +123,17 @@ input {
     text-align: center;
     flex-direction: row;
     flex: 1;
-    gap: 5%;
+    gap: 20px;
     padding: 1%;
     background-color: #D2DDE9;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cont-11{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
 
 .plato {
@@ -133,14 +142,13 @@ input {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex: 1;
-    min-width: 100px;
+    width: 150px;
     background-color: #ECEFF4;
 }
 
 .plato-img {
-    width: 70%;
     height: auto;
+    width: 150px;
 }
 
 /*contenedor 2*/
@@ -157,13 +165,27 @@ input {
 
 .c2-div1 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex: 3;
     background-color: #C5C5C5;
     padding: 1%;
     padding-top: 4%;
     flex-wrap: wrap;
     height: auto;
+    min-width: 350px;
+}
+
+.d1{
+    display: flex;
+    flex: 5;
+    flex-direction: row;
+}
+
+.d2{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    padding-right: 5%;
 }
 
 .t-c2 {
@@ -175,11 +197,25 @@ input {
 }
 
 .tc2desc {
-    font-size: 2.2rem;
+    display: flex;
+    font-size: 2.3rem;
+    font-weight: bold;
+    text-align: start;
+    flex: 1;
+    align-items: center;
 }
 
 .tc2dom {
-    font: size 0.8rem; ;
+    display: flex;
+    font-size: 1.20rem;
+    text-align: start;
+    flex: 1;
+}
+
+.barra-azul {
+    width: 25%;      
+    height: 5px;      
+    background-color: #2761AD;
 }
 
 .mex {
@@ -197,18 +233,32 @@ input {
 .img-c2 {
     display: flex;
     flex: 2;
+    height: 400px;
+    overflow: hidden; 
+    position: relative;
+}
+
+#img-1{
+    width: 100%;
+    height: auto;
 }
 
 #video{
     width: 100%;
-    height: auto;
-    min-width: 400px;
+  height: 100%;
+  
+  /* El truco de magia: recorta el video para llenar el div sin deformarlo */
+  object-fit: cover; 
+  
+  /* Opcional: centra el recorte (por defecto ya está al centro) */
+  object-position: center; 
 }
 
 .rec {
     display: flex;
     flex: 1;
     flex-direction: column;
+    min-width: 350px;
 }
 
 .orden {
@@ -217,6 +267,16 @@ input {
     justify-content: center;
     align-items: center;
     flex: 1;
+    padding: 10px;
+}
+
+.orden div img{
+    height: 120px;
+}
+
+.orden-c{
+    display: flex;
+    flex:2;
 }
 
 .orden-t {
@@ -224,7 +284,10 @@ input {
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
+    height: 120px;
     align-items: center;
+    flex: 4;
+    padding: 0 10px;
 }
 
 .ver-mas{
@@ -232,6 +295,7 @@ input {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
 }
 
 .orden-t div {
@@ -245,10 +309,11 @@ input {
 }
 
 button {
-    background-color: #FC6500;
-    padding: 5px 9px;
+    background-color: #17324F;
     border-radius: 50%;
     border: none;
+    padding: 0px 9px;
+    font-size: 1.8rem;
     color: white;
     cursor: pointer;
 }

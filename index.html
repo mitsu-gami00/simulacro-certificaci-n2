@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>biblioteca horizonte</title>
@@ -9,123 +9,139 @@
     <link rel="stylesheet" href="static/css/style.css" />
     <!-- Archivo JavaScript -->
     <script src="static/JS/script.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="div-logo">
-                <img id="logo" src="static/images/logo.png" alt="logo">
-                <div class="titulo">
-                    <h1>Biblioteca</h1>
-                    <h1 class="horizonte">Horizonte</h1>
-                </div>
+      <nav>
+        <div class="div-logo">
+          <img id="logo" src="static/images/logo.png" alt="logo" />
+          <div class="titulo">
+            <h1>Biblioteca</h1>
+            <h1 class="horizonte">Horizonte</h1>
+          </div>
+        </div>
+        <div class="div-n">
+          <div class="input">
+            <input id="email" type="text" placeholder="Email" />
+            <input id="login" type="button" value="Ingresar" />
+          </div>
+          <div class="carro">
+            <img id="libros" src="static/images/libros.png" alt="carrito" />
+            <div>
+              <p>Libros</p>
+              <p>Seleccionados: <span id="articulosCarro">0</span></p>
             </div>
-            <div class="div-n">
-                <div class="input">
-                    <input id="email" type="text" placeholder="Email">
-                    <input id="login" type="button" value="Ingresar">
-                </div>
-                <div class="carro">
-                    <img id="libros" src="static/images/libros.png" alt="carrito">
-                    <div>
-                        <p>Libros</p>
-                        <p>Seleccionados: <span id="articulosCarro">0</span></p>
-                    </div>
-                </div>
-            </div>
-        </nav>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-        <section class="contenedor1">
-            <div class="plato">
-                <img src="static/images/logo.png" alt="Libro" class="plato-img">
-                <p>Novelas</p>
+      <section class="contenedor1">
+        <div class="cont-11">
+        <div class="plato">
+          <img src="static/images/logo.png" alt="Libro" class="plato-img" />
+          <p>Novelas</p>
+        </div>
+        <div class="plato">
+          <img
+            src="static/images/Ciencias.png"
+            alt="ciencias"
+            class="plato-img"
+          />
+          <p>Ciencias</p>
+        </div>
+        <div class="plato">
+          <img src="static/images/teatro.png" alt="teatro" class="plato-img" />
+          <p>Historia</p>
+        </div>
+        </div>
+        <div class="cont-11">
+        <div class="plato">
+          <img src="static/images/laptop.png" alt="laptop" class="plato-img" />
+          <p>Tecnología</p>
+        </div>
+        <div class="plato">
+          <img src="static/images/paleta.png" alt="paleta" class="plato-img" />
+          <p>Arte</p>
+        </div>
+        <div class="plato">
+          <img src="static/images/oso.png" alt="oso" class="plato-img" />
+          <p>Infantil</p>
+        </div>
+        </div>
+      </section>
+      <section class="contenedor2">
+        <div class="c2-div1">
+          <div class="d1">
+            <div class="t-c2">
+              <p class="tc2desc">Descubre <br> nuevas historias</p>
+              <div class="barra-azul"></div>
+              <p class="tc2dom">
+                Explora nuestra biblioteca virtual y encuentra libros para todos
+                los gustos. Conocimiento, aventura y mucho más al alcance de un
+                clic
+              </p>
             </div>
-            <div class="plato">
-                <img src="static/images/Ciencias.png" alt="ciencias" class="plato-img">
-                <p>Ciencias</p>
+            <div id="cont" class="img-c2">
+                <img id="img-1" src="static/images/Biblioteca.jpg" alt=""/>
+                <video id="video" src="static/video/⚠️ Advertencia- entrar a esta biblioteca puede hacer que quieras quedarte horas 😜La Biblioteca .mp4" muted loop></video>
             </div>
-            <div class="plato">
-                <img src="static/images/teatro.png" alt="teatro" class="plato-img">
-                <p>Historia</p>
             </div>
-            <div class="plato">
-                <img src="static/images/laptop.png" alt="laptop" class="plato-img">
-                <p>Tecnología</p>
+            <div class="d2">
+            <p>Conoce la Biblioteca Horizonte</p>
+          </div>
+          </div>
+          
+        </div>
+        <div class="rec">
+          <h3>Libros Recomendados:</h3>
+          <div class="orden">
+            <div class="orden-c">
+              <img src="static/images/cien.webp" alt="Cien años" />
             </div>
-            <div class="plato">
-                <img src="static/images/paleta.png" alt="paleta" class="plato-img">
-                <p>Arte</p>
+            <div class="orden-t">
+              <div>
+                <h4>Cien años de soledad</h4>
+                <p>Gabriel García Márquez</p>
+              </div>
+              <div class="ver-mas">
+                <a href="#">Ver Más...</a>
+                <button id="art1">+</button>
+              </div>
             </div>
-            <div class="plato">
-                <img src="static/images/oso.png" alt="oso" class="plato-img">
-                <p>Infantil</p>
+          </div>
+          <div class="orden">
+            <div class="orden-c">
+              <img src="static/images/sapiens.webp" alt="Sapiens" />
             </div>
-        </section>
-        <section class="contenedor2">
-            <div class="c2-div1">
-                <div class="t-c2">
-                    <p class="tc2desc">Descubre nuevas historias</p>
-                    <p class="tc2dom">
-                        Explora nuestra biblioteca virtual 
-                        y encuentra libros para todos los gustos. 
-                        Conocimiento, aventura y mucho más
-                        al alcance de un clic
-                    </p>
-                </div>
-                <div class="img-c2">
-                    <video controls src="static/video/" id="video">
-                </div>
+            <div class="orden-t">
+              <div>
+                <h4>Sapiens</h4>
+                <p>Yuval Noah Harari</p>
+              </div>
+              <div class="ver-mas">
+                <a href="#">Ver Más...</a>
+                <button id="art2">+</button>
+              </div>
             </div>
-            <div class="rec">
-                <h3>Libros Recomendados:</h3>
-                <div class="orden">
-                    <div>
-                        <img src="static/images/orden-tacos.jpg" alt="orden-tacos">
-                    </div>
-                    <div class="orden-t">
-                        <div>
-                            <h4>Cien años de soledad</h4>
-                            <p>Gabriel García Márquez</p>
-                        </div>
-                        <div class="ver-mas">
-                            <a href="#">Ver Más...</a>
-                            <button id="art1">+</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="orden">
-                    <div>
-                        <img src="static/images/orden-flautas.jpg" alt="orden-flautas">
-                    </div>
-                    <div class="orden-t">
-                        <div>
-                            <h4>Sapiens</h4>
-                            <p>Yuval Noah Harari</p>
-                        </div>
-                        <div class="ver-mas">
-                            <a href="#">Ver Más...</a>
-                            <button id="art2">+</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="orden">
-                    <div>
-                        <img src="static/images/orden-flautas.jpg" alt="orden-flautas">
-                    </div>
-                    <div class="orden-t">
-                        <div>
-                            <h4>El principito</h4>
-                            <p>Antoine de Saint-Exupéry</p>
-                        </div>
-                        <div class="ver-mas">
-                            <a href="#">Ver Más...</a>
-                            <button id="art2">+</button>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="orden">
+            <div class="orden-c">
+              <img src="static/images/principito.jpg" alt="Principito" />
             </div>
-        </section>
+            <div class="orden-t">
+              <div>
+                <h4>El principito</h4>
+                <p>Antoine de Saint-Exupéry</p>
+              </div>
+              <div class="ver-mas">
+                <a href="#">Ver Más...</a>
+                <button id="art2">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>

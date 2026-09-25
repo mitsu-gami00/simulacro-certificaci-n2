@@ -23,12 +23,21 @@ login.forEach(function (button) {
     })
 })
 
-let imagen = document.querySelector("#img-1");
+const contenedor = document.getElementById('cont');
+const imagen = document.getElementById('img-1');
+const video = document.getElementById('video');
 
-imagen.addEventListener("mouseover", function () {
-    imagen.src = "static/images/comida-mexicana2.jpg";
+// Al poner el mouse encima
+contenedor.addEventListener('mouseenter', () => {
+    imagen.style.display = 'none';   // Oculta la imagen
+    video.style.display = 'block';   // Muestra el video
+    video.play();                    // Reproduce el video
 });
-    
-imagen.addEventListener("mouseout", function () {
-    imagen.src = "static/images/comida-mexicana.jpg";
+
+// Al quitar el mouse
+contenedor.addEventListener('mouseleave', () => {
+    video.pause();                   // Pausa el video
+    video.currentTime = 0;           // (Opcional) Reinicia el video al inicio
+    video.style.display = 'none';    // Oculta el video
+    imagen.style.display = 'block';  // Muestra la imagen de nuevo
 });
