@@ -183,6 +183,7 @@ input {
     display: flex;
     flex: 5;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .d2{
@@ -198,6 +199,7 @@ input {
     padding: 1%;
     flex-direction: column;
     gap: 1%;
+    min-width: 300px;
 }
 
 .tc2desc {
@@ -238,6 +240,7 @@ input {
     display: flex;
     flex: 2;
     height: 400px;
+    min-width: 300px;
     overflow: hidden; 
     position: relative;
 }
