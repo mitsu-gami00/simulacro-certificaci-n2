@@ -1,4 +1,4 @@
-//Función Para Agregar Producto Al Pedido
+//Función para agregar producto al pedido
 let articulo = document.querySelectorAll("#art1");
 articulo.forEach(function (button) {
     button.addEventListener("click", function () {
@@ -23,7 +23,7 @@ articulo3.forEach(function (button) {
     });
 })
 
-//Función Para Dar La Bienvenida Al Usuario Al Iniciar Sesión
+//Función para dar la bienvenida al usuario al iniciar sesión
 
 let correo = document.getElementById("email");
 let login = document.querySelectorAll("#login");
@@ -34,7 +34,7 @@ login.forEach(function (button) {
     })
 })
 
-//Función Ejecutar Video Al Sobreponer Mouse
+//Función ejecutar video al sobreponer mouse
 
 const contenedor = document.getElementById('cont');
 const imagen = document.getElementById('img-1');
