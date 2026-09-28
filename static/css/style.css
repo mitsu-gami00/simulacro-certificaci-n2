@@ -1,8 +1,12 @@
+/*Configuración General*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/*Estructura Base*/
 
 body{
     padding: 1%;
@@ -247,12 +251,14 @@ input {
     width: 100%;
   height: 100%;
   
-  /* El truco de magia: recorta el video para llenar el div sin deformarlo */
+  /*recorta el video para llenar el div sin deformarlo */
   object-fit: cover; 
   
-  /* Opcional: centra el recorte (por defecto ya está al centro) */
+  /*centra el recorte (por defecto ya está al centro) */
   object-position: center; 
 }
+
+/*Recomendaciones*/
 
 .rec {
     display: flex;
